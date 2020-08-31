@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Desafío I - Formulario de Validación</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <h1>Formulario de registro</h1>
+    <form class="form-register">
+        <div class="contenedor-inputs">
+            <input type="text" id="rut" name="rut" placeholder="Rut: 12345678-9" class="inputcss">
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre" class="inputcss">
+            <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" class="inputcss">
+            <input type="number" id="edad" name="edad" max="120" min="0" placeholder="Edad" class="inputcss">
+            <input type="text" id="email" name="email" placeholder="Email" class="inputcss">
+            <select id="especialidad" name="especialidad" class="inputcss">
+                <option disabled selected value="-1">Elige una especialidad</option>
+                <option value="Dental">Dental</option>
+                <option value="Traumatología">Traumatología</option>
+                <option value="Radiología">Radiología</option>
+                <option value="Cardiología">Cardiología</option>
+                <option value="Kinesiología">Kinesiología</option>
+                <option value="Pediatría">Pediatría</option>
+                <option value="Geriatría">Geriatría</option>
+            </select>
+            <input type="text" id="fecha" name="fecha" placeholder="Fecha: dd-mm-yyyy" class="inputcss">
+            <select id="hora" name="hora" class="inputcss">
+                <option disabled selected value="-1">Elige una hora</option>
+                <option value="08:00">08:00</option>
+                <option value="09:00">09:00</option>
+                <option value="10:00">10:00</option>
+                <option value="11:00">11:00</option>
+                <option value="12:00">12:00</option>
+                <option value="13:00">13:00</option>
+                <option value="14:00">14:00</option>
+                <option value="15:00">15:00</option>
+                <option value="16:00">16:00</option>
+                <option value="17:00">17:00</option>
+                <option value="18:00">18:00</option>
+                <option value="19:00">19:00</option>
+            </select>
+            <input id="reservar" type="button" value="Reservar" class="btn-enviar">
+
+        </div>
+    </form>
+    <div id="mensajeconsola">
+    </div>
+    <script type="text/javascript" src="validar.js"></script>
+</body>
+
+</html>
